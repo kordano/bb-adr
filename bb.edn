@@ -1,0 +1,6 @@
+{:paths          ["src" "resources"]
+ :deps           {selmer {:mvn/version "1.12.58"}}
+ :min-bb-version "0.3.7"
+ :tasks          {:requires ([bb-adr.core :as m])
+                  init (m/init *command-line-args*)
+                  new (m/new *command-line-args*)}}
